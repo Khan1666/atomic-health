@@ -1,0 +1,1338 @@
+/* @font-face {
+    font-family: domain;
+    src: url(./domain.ttf
+    );
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Abcwhyteinktrap, sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    overflow: hidden;
+    position: relative;
+}
+
+#page1{
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    position: relative;
+    object-fit: cover;
+    transition: all ease 0.5s;
+   
+    
+}
+
+#video video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+#page1 #nav{
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    height: 20%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 120px;
+    top: 10%;
+    transition: all ease 0.5s;
+
+}
+
+#nav #logo h1 {
+    font-size: 40px;
+    color: white;
+    font-weight: 400;
+    transition: all ease 0.5s;
+    
+}
+
+#button1{
+    width: 25%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all ease 0.5s;
+}
+
+.first{
+    font-size: 25px;
+    border: 2px solid #61fcff;
+    padding: 15px 22px;
+    border-radius: 30px;
+    color: white;
+    background-color: transparent;
+    transition: all ease 0.3s;
+}
+
+
+.second{
+    font-size: 25px;
+    border: 2px solid #61fcff;
+    padding: 20px 22px;
+    border-radius: 50%;
+    color: white;
+    background-color: transparent;
+    transition: all ease 0.3s;
+}
+
+#text1{
+    position: absolute;
+    bottom: 5%;
+    left: 7%;
+    font-size: 50px;
+    font-family: GT Super Text Book;
+    color: white;
+    transition: all ease 1s;
+   
+}
+
+#text1 h1{
+    font-weight: 400;
+    transition: all ease 0.5s;
+    opacity: 0.5;
+}
+
+#text1 span{
+    font-style: italic;
+    transition: all ease 0.5s;
+}
+
+
+#ex-page{
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    position: relative;
+    object-fit: cover;
+    display: none;
+    transition: all ease 0.5s;
+}
+
+#video0 video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+#ex-page #nav0{
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    height: 20%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 120px;
+    top: 10%;
+    transition: all ease 0.5s;
+
+}
+
+#nav0 #logo0 h1 {
+    font-size: 40px;
+    color: white;
+    font-weight: 400;
+    transition: all ease 0.5s;
+    
+}
+
+#button0{
+    width: 25%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all ease 0.5s;
+}
+
+.first0{
+    font-size: 25px;
+    border: 2px solid #61fcff;
+    padding: 15px 22px;
+    border-radius: 30px;
+    color: white;
+    background-color: transparent;
+    transition: all ease 0.3s;
+}
+
+
+.second0{
+    font-size: 25px;
+    border: 2px solid #61fcff;
+    padding: 20px 22px;
+    border-radius: 50%;
+    color: white;
+    background-color: transparent;
+    transition: all ease 0.3s;
+}
+
+#text0{
+    position: absolute;
+    bottom: 15%;
+    left: 7%;
+    font-size: 50px;
+    font-family: GT Super Text Book;
+    color: white;
+    transition: all ease 0.5s;
+   
+}
+
+#text0 h1{
+    font-weight: 400;
+    transition: all ease 0.5s;
+}
+
+#text0 span{
+    font-style: italic;
+    transition: all ease 0.5s;
+}
+
+#contact-page{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(2, 2, 185);
+    position: relative;
+    object-fit: cover;
+    display: none;
+    transition: all ease 0.5s;
+    z-index: 999;
+}
+
+
+#video0 video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+#contact-page #nav-c{
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    height: 20%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 120px;
+    top: 10%;
+    transition: all ease 0.5s;
+
+}
+
+#nav-c #logo-c h1 {
+    font-size: 40px;
+    color: white;
+    font-weight: 400;
+    transition: all ease 0.5s;
+    
+}
+
+#button-c{
+    width: 25%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all ease 0.5s;
+}
+
+.first-c{
+    font-size: 25px;
+    border: 2px solid #61fcff;
+    padding: 15px 22px;
+    border-radius: 30px;
+    color: white;
+    background-color: transparent;
+    transition: all ease 0.3s;
+}
+
+
+.second-c {
+    font-size: 25px;
+    border: 2px solid #61fcff;
+    padding: 20px 22px;
+    border-radius: 50%;
+    color: white;
+    background-color: transparent;
+    transition: all ease 0.3s;
+}
+
+#text-c{
+    position: absolute;
+    bottom: 20%;
+    left: 7%;
+    font-size: 50px;
+    font-family: GT Super Text Book;
+    color: white;
+    transition: all ease 0.5s;
+   
+}
+
+#text-c h1{
+    font-weight: 400;
+    transition: all ease 0.5s;
+}
+
+#text-c p{
+    font-style: italic;
+    transition: all ease 0.5s;
+    font-size: 40px;
+}
+
+#page2{
+    width: 100vw;
+    height: 80vh;
+    background-color: white;
+    position: relative;
+}
+
+#page2 h1{
+   position: absolute;
+   left: 10%;
+   top: 50%;
+   color: rgb(0, 0, 218);
+   font-size: 70px;
+   font-weight: 400;
+   opacity: 0;
+}
+
+#page2 span{
+    font-style: italic;
+}
+
+#page3{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+}
+
+#card0{
+    width: 1200px;
+    height: 570px;
+    border: 1px solid rgb(0, 0, 213);
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    opacity: 0;
+    transition: all ease 0.25s;
+}
+
+#card0 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1;
+}
+#card0 img:hover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1.05;
+    transition: all ease 0.2s;
+    cursor: pointer;
+}
+
+.font{
+   font-size: 35px;
+   position: absolute;
+   bottom: 33%;
+   left: 15%;
+   color: white ;
+   transition: all ease 0.25s;
+}
+
+.font h5{
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+.font h2{
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 45px;
+}
+
+#page4{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: green; */
+    position: relative;
+}
+
+#card1{
+   width: 1200px;
+   height: 570px;
+   /* background-color: red; */
+   border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    opacity: 0;
+    transition: all ease 0.25s;
+}
+
+#card1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1;
+}
+#card1 img:hover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1.05;
+    transition: all ease 0.2s;
+    cursor: pointer;
+}
+
+.font1{
+   font-size: 35px;
+   position: absolute;
+   bottom: 33%;
+   left: 15%;
+   color: white;
+   transition: all ease 0.25s;
+}
+
+.font1 h5{
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+.font1 h2{
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 45px;
+}
+
+#page5{
+    width: 100vw;
+    height: 80vh;
+    background-color: white;
+    position: relative;
+}
+
+#page5 h1{
+   position: absolute;
+   left: 10%;
+   top: 20%;
+   color: rgb(0, 0, 218);
+   font-size: 70px;
+   font-weight: 400;
+   opacity: 0;
+}
+
+#page5 span{
+    font-style: italic;
+}
+
+
+#page6{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: green; */
+    position: relative;
+}
+
+#card2{
+   width: 1200px;
+   height: 570px;
+   /* background-color: red; */
+   border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    opacity: 0;
+    transition: all ease 0.25s;
+}
+
+#card2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1;
+}
+#card2 img:hover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1.05;
+    transition: all ease 0.2s;
+    cursor: pointer;
+}
+
+.font2{
+   font-size: 35px;
+   position: absolute;
+   bottom: 33%;
+   left: 15%;
+   color: white;
+   transition: all ease 0.25s;
+}
+
+.font2 h5{
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+.font2 h2{
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 45px;
+}
+#page7{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: green; */
+    position: relative;
+}
+
+#card3{
+   width: 1200px;
+   height: 570px;
+   /* background-color: red; */
+   border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    opacity: 0;
+    transition: all ease 0.25s;
+}
+
+#card3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1;
+}
+#card3 img:hover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1.05;
+    transition: all ease 0.2s;
+    cursor: pointer;
+}
+
+.font3{
+   font-size: 35px;
+   position: absolute;
+   bottom: 33%;
+   left: 15%;
+   color: #5691F2;
+   transition: all ease 0.25s;
+}
+
+.font3 h5{
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+.font3 h2{
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 45px;
+}
+
+#page8{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#page8 h2{
+    font-size: 40px;
+    color: #0c12be;
+    font-weight: 400;
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 200px;
+}
+#marketing{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 40px;
+}
+#product{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 40px;
+}
+#strategy{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 40px;
+}
+
+#page8 #heading span{
+    font-style: italic;
+}
+
+#page8 li span{
+    color: rgb(216, 67, 91);
+    font-size: 30px;
+}
+
+#page8 li {
+    font-size: 30px;
+    color: rgb(4, 4, 196);
+}
+#page9{
+    width: 100vw;
+    max-height: 100vh;
+    background-color:#010dbd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px ;
+    border-top: 50px;
+}
+#page9 h3{
+    font-size: 45px;
+    color: white;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+#page9 h1{
+    font-size: 85px;
+    color: white;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+#page9 #l-text a{
+    font-size: 30px;
+    color: #00b4e7;
+
+}
+
+
+@media (max-width: 600px) {
+  
+    
+#main{
+    overflow: hidden;
+    position: relative;
+}
+
+#page1{
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    position: relative;
+    object-fit: cover;
+    transition: all ease 0.5s;
+   
+    
+}
+
+#video video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: fill;
+    transition: all ease 0.5s;
+}
+
+#page1 #nav{
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    height: 20%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    top: 10%;
+    transition: all ease 0.5s;
+
+}
+
+#nav #logo h1 {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    transition: all ease 0.5s;
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    margin-left: 10%;
+    
+}
+
+#button1{
+    width: 5%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all ease 0.5s;
+}
+
+.first{
+    font-size: 15px;
+    border: 2px solid #61fcff;
+    padding: 15px 22px;
+    border-radius: 30px;
+    color: white;
+    background-color: transparent;
+    transition: all ease 0.3s;
+
+}
+
+
+.second{
+    font-size: 20px;
+    border: 2px solid #61fcff;
+    padding: 20px 22px;
+    border-radius: 50%;
+    color: white;
+    background-color: transparent;
+    transition: all ease 0.3s;
+}
+
+#text1{
+    position: absolute;
+    bottom: 22%;
+    left: 7%;
+    font-size: 30px;
+    font-family: GT Super Text Book;
+    color: white;
+    transition: all ease 1s;
+   
+}
+
+#text1 h1{
+    font-weight: 400;
+    transition: all ease 0.5s;
+    opacity: 0.5;
+}
+
+#text1 span{
+    font-style: italic;
+    transition: all ease 0.5s;
+}
+
+
+#ex-page{
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    position: relative;
+    object-fit: cover;
+    display: none;
+    transition: all ease 0.5s;
+}
+
+#video0 video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+#ex-page #nav0{
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    height: 20%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    top: 10%;
+    transition: all ease 0.5s;
+
+}
+
+#nav0 #logo0 h1 {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    transition: all ease 0.5s;
+    position: absolute;
+
+     top: 40%;
+    left: 0%;
+    margin-left: 10%;
+}
+
+#button0{
+    width: 25%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all ease 0.5s;
+}
+
+.first0{
+    font-size: 15px;
+    border: 2px solid #61fcff;
+    padding: 15px 22px;
+    border-radius: 30px;
+    color: white;
+    background-color: transparent;
+    transition: all ease 0.3s;
+}
+
+
+.second0{
+    font-size: 20px;
+    border: 2px solid #61fcff;
+    padding: 20px 22px;
+    border-radius: 50%;
+    color: white;
+    background-color: transparent;
+    transition: all ease 0.3s;
+}
+
+#text0{
+    position: absolute;
+    bottom: 40%;
+    left: 7%;
+    font-size: 20px;
+    font-family: GT Super Text Book;
+    color: white;
+    transition: all ease 0.5s;
+   
+}
+
+#text0 h1{
+    font-weight: 400;
+    transition: all ease 0.5s;
+}
+
+#text0 span{
+    font-style: italic;
+    transition: all ease 0.5s;
+}
+
+#contact-page{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(2, 2, 185);
+    position: relative;
+    object-fit: cover;
+    display: none;
+    transition: all ease 0.5s;
+    z-index: 999;
+}
+
+
+#video0 video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+#contact-page #nav-c{
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    height: 20%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    top: 10%;
+    transition: all ease 0.5s;
+
+}
+
+#nav-c #logo-c h1 {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    transition: all ease 0.5s;
+    position: absolute;
+
+     top: 40%;
+    left: 0%;
+    margin-left: 10%;
+    
+}
+
+#button-c{
+    width: 25%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all ease 0.5s;
+}
+
+.first-c{
+    font-size: 15px;
+    border: 2px solid #61fcff;
+    padding: 15px 22px;
+    border-radius: 30px;
+    color: white;
+    background-color: transparent;
+    transition: all ease 0.3s;
+}
+
+
+.second-c {
+    font-size: 20px;
+    border: 2px solid #61fcff;
+    padding: 20px 22px;
+    border-radius: 50%;
+    color: white;
+    background-color: transparent;
+    transition: all ease 0.3s;
+}
+
+#text-c{
+    position: absolute;
+    bottom: 6%;
+    left: 7%;
+    font-size: 50px;
+    font-family: GT Super Text Book;
+    color: white;
+    transition: all ease 0.5s;
+   
+}
+
+#text-c h1{
+    font-weight: 400;
+    transition: all ease 0.5s;
+    font-size: 98px;
+}
+
+#text-c p{
+    font-style: italic;
+    transition: all ease 0.5s;
+    font-size: 30px;
+}
+
+#page2{
+    width: 100vw;
+    height: 80vh;
+    background-color: white;
+    position: relative;
+}
+
+#page2 h1{
+   position: absolute;
+   left: 10%;
+   top: 30%;
+   color: rgb(0, 0, 218);
+   font-size: 38px;
+   font-weight: 400;
+   opacity: 0;
+}
+
+#page2 span{
+    font-style: italic;
+}
+
+#page3{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+}
+
+#card0{
+    width:375px;
+    height: 570px;
+    border: 1px solid rgb(0, 0, 213);
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    opacity: 0;
+    transition: all ease 0.25s;
+}
+
+#card0 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1;
+}
+#card0 img:hover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1.05;
+    transition: all ease 0.2s;
+    cursor: pointer;
+}
+
+.font{
+   font-size: 27px;
+   position: absolute;
+   bottom: 33%;
+   left: 15%;
+   color: white ;
+   transition: all ease 0.25s;
+}
+
+.font h5{
+    padding-bottom: 15px;
+    font-weight: 400;
+}
+.font h2{
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+#page4{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: green; */
+    position: relative;
+}
+
+#card1{
+   width: 375px;
+   height: 570px;
+   /* background-color: red; */
+   border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    opacity: 0;
+    transition: all ease 0.25s;
+}
+
+#card1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1;
+}
+#card1 img:hover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1.05;
+    transition: all ease 0.2s;
+    cursor: pointer;
+}
+
+.font1{
+   font-size: 28px;
+   position: absolute;
+   bottom: 33%;
+   left: 15%;
+   color: white;
+   transition: all ease 0.25s;
+}
+
+.font1 h5{
+    padding-bottom: 20px;
+    font-weight: 400;
+
+}
+.font1 h2{
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 37px;
+    margin-right: 10%;
+}
+
+#page5{
+    width: 100vw;
+    height: 80vh;
+    background-color: white;
+    position: relative;
+}
+
+#page5 h1{
+   position: absolute;
+   left: 10%;
+   top: 20%;
+   color: rgb(0, 0, 218);
+   font-size: 49px;
+   font-weight: 400;
+   opacity: 0;
+}
+
+#page5 span{
+    font-style: italic;
+}
+
+
+#page6{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: green; */
+    position: relative;
+}
+
+#card2{
+   width: 375px;
+   height: 570px;
+   /* background-color: red; */
+   border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    opacity: 0;
+    transition: all ease 0.25s;
+}
+
+#card2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1;
+}
+#card2 img:hover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1.05;
+    transition: all ease 0.2s;
+    cursor: pointer;
+}
+
+.font2{
+   font-size: 25px;
+   position: absolute;
+   bottom: 33%;
+   left: 15%;
+   color: white;
+   transition: all ease 0.25s;
+}
+
+.font2 h5{
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+.font2 h2{
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 30px;
+    color: #00b4e7;
+}
+#page7{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: green; */
+    position: relative;
+}
+
+#card3{
+   width: 375px;
+   height: 570px;
+   /* background-color: red; */
+   border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    opacity: 0;
+    transition: all ease 0.25s;
+}
+
+#card3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1;
+}
+#card3 img:hover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1.05;
+    transition: all ease 0.2s;
+    cursor: pointer;
+}
+
+.font3{
+   font-size: 35px;
+   position: absolute;
+   bottom: 33%;
+   left: 15%;
+   color: #5691F2;
+   transition: all ease 0.25s;
+}
+
+.font3 h5{
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+.font3 h2{
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 45px;
+}
+
+#page8{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+#page8 h2{
+    font-size: 30px;
+    color: #0c12be;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    flex-direction: column;
+    margin-bottom: 90%;
+}
+#marketing{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 20px;
+}
+#product{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 20px;
+}
+#strategy{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 20px;
+}
+
+#page8 #heading span{
+    font-style: italic;
+}
+
+#page8 li span{
+    color: rgb(216, 67, 91);
+    font-size: 30px;
+}
+
+#page8 li {
+    font-size: 30px;
+    color: rgb(4, 4, 196);
+}
+#page9{
+    width: 100vw;
+    max-height: 100vh;
+    background-color:#010dbd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px ;
+    border-top: 50px;
+}
+#page9 h3{
+    font-size: 25px;
+    color: white;
+    font-weight: 400;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+#page9 h1{
+    font-size: 55px;
+    color: white;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+#page9 #l-text a{
+    font-size: 20px;
+    color: #00b4e7;
+
+}
+#page9 #l-video video{
+    font-size: 20px;
+    color: #00b4e7;
+
+}
+   
+    
+  }
